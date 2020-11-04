@@ -2,7 +2,6 @@ name: Screener-Runner-Test
 on: [push]
 jobs:
   screener-runner-test:
-    name: Run screener runner tests on push
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
