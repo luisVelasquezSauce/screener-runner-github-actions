@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: npm test-screener
+      - run: npm run test-screener
         env:
           DEFAULT_BRANCH: main
           CI: true
