@@ -10,7 +10,7 @@ module.exports = {
   states: [
     {
       url: 'https://screener.io',
-      name: 'login'
+      name: 'Home'
     },
   ]
 };

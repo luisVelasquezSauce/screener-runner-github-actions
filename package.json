@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/luisVelasquezSauce/screener-runner-github-actions#readme",
   "devDependencies": {
-    "screener-runner": "^0.11.8"
+    "screener-runner": "git+https://github.com/saucelabs/screener-runner"
   }
 }
