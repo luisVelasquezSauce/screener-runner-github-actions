@@ -1,4 +1,3 @@
-name: Screener-Runner-Test
 on: [push]
 jobs:
   screener-runner-test:
