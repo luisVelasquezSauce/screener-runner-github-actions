@@ -1,23 +1,14 @@
 name: Screener-Runner-Test
-
 on: [push]
-
 jobs:
   screener-runner-test:
     name: Run screener runner tests on push
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
+      - uses: actions/setup-node@v1
       - run: npm install
       - run: npm run test-screener
         env:
           DEFAULT_BRANCH: main
-          CI: true
           SCREENER_API_KEY: ${{ secrets.SCREENER_API_KEY }}
