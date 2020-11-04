@@ -10,5 +10,4 @@ jobs:
       - run: npm install
       - run: npm run test-screener
         env:
-          DEFAULT_BRANCH: main
           SCREENER_API_KEY: ${{ secrets.SCREENER_API_KEY }}
